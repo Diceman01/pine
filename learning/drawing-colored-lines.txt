@@ -1,6 +1,8 @@
 //@version=3
 study("My Script")
 
-ema = ema(close, 15)
-c = ema >= close ? lime : red
-plot(ema, color = c)
+ema50 = ema(close, 50)
+ema200 = ema(close, 200)
+c = ema50 > ema200 ? lime : red
+plot(ema50, color = c)
+plot(ema200, color = blue)
