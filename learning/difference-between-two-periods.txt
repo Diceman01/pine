@@ -1,0 +1,8 @@
+//@version=3
+study("Yesterday's close")
+
+close-1 = close[1]
+close-0 = close
+
+plot(close-0, color = blue)
+plot(close-1, color = red)
